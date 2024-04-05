@@ -22,8 +22,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select (col('FRUI
 
 ingredients_list = st.multiselect ('Choose upto 6 ingredients:'
             , my_dataframe
-            , max_selections=6
-                                 )
+            , max_selections=6)
 if ingredients_list:
     ingredients_string = ''
 
